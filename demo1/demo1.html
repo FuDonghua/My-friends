@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <!-- 以上代码IE=edge告诉IE使用最新的引擎渲染网页，chrome=1则可以激活Chrome Frame. -->
+    <!-- <link rel="stylesheet" type="text/css" href="../css/task4.css" /> -->
+    <title>demo</title>
+    <script type="text/javascript" src="./resuorce/index/vue.js"></script> <!--在上-->
+    <link rel="stylesheet" href="./resuorce/index/index.css">
+    <script type="text/javascript" src="./resuorce/index/index.js"></script>
+</head>
+
+<body>
+    <div>
+        <div id="app">
+            <el-button>按钮</el-button>
+            <div>{{a}}</div>
+        </div>
+    </div>
+</body>
+
+<script>
+    new Vue({
+        el: '#app',
+        data(){
+            return {
+                a:'成功引入Vue + element-ui',
+            }
+        }
+    })
+</script>
+</html>
